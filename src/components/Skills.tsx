@@ -21,7 +21,7 @@ const skills = [
   { name: "NestJS", category: "backend", icon: SiNestjs },
   { name: "Spring Boot", category: "backend", icon: SiSpringboot },
 
-  // Tools & Platforms
+  // Tools & Platforms I use
   { name: "Git", category: "tools", icon: FaGitAlt },
   { name: "GitHub", category: "tools", icon: FaGithub },
   { name: "Docker", category: "tools", icon: FaDocker },
