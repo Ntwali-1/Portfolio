@@ -1,4 +1,4 @@
-import { Briefcase, Code, User, ShieldCheck, Cpu, UserX } from "lucide-react"
+import { Code, User, ShieldCheck, Cpu } from "lucide-react"
 
 const AboutMe = () => {
   return (

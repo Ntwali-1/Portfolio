@@ -1,54 +1,46 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaDocker, FaPhp } from "react-icons/fa";
+import { SiTypescript, SiTailwindcss, SiNextdotjs, SiExpress, SiLaravel, SiNestjs, SiSpringboot, SiPostman, SiArduino, SiMongodb, SiMysql, SiPostgresql } from "react-icons/si";
+import { MdOutlineDescription, MdRecordVoiceOver, MdSearch, MdBrush } from "react-icons/md";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 95, category: "frontend" },
-  { name: "TypeScript", level: 70, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+   { name: "HTML", category: "frontend", icon: FaHtml5 },
+  { name: "CSS", category: "frontend", icon: FaCss3Alt },
+  { name: "React", category: "frontend", icon: FaReact },
+  { name: "TypeScript", category: "frontend", icon: SiTypescript },
+  { name: "Tailwind CSS", category: "frontend", icon: SiTailwindcss },
+  { name: "Next.js", category: "frontend", icon: SiNextdotjs },
 
   // Backend
-  { name: "Node.js", level: 85, category: "backend" },
-  { name: "Express", level: 90, category: "backend" },
-  { name: "MongoDB", level: 90, category: "backend" },
-  { name: "SQL", level: 95, category: "backend" },
-  { name: "PHP", level: 90, category: "backend" },
-  { name: "Laravel", level: 85, category: "backend" },
-  { name: "C/C++", level:70, category:"backend"},
+  { name: "Node.js", category: "backend", icon: FaNodeJs },
+  { name: "Express", category: "backend", icon: SiExpress },
+  { name: "PHP", category: "backend", icon: FaPhp },
+  { name: "Laravel", category: "backend", icon: SiLaravel },
+  { name: "NestJS", category: "backend", icon: SiNestjs },
+  { name: "Spring Boot", category: "backend", icon: SiSpringboot },
 
-  // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
-  { name: "Adobe XD", level: 80, category: "tools" },
-  { name: "Adobe Photoshop", level: 75, category: "tools" },
+  // Tools & Platforms
+  { name: "Git", category: "tools", icon: FaGitAlt },
+  { name: "GitHub", category: "tools", icon: FaGithub },
+  { name: "Docker", category: "tools", icon: FaDocker },
+  { name: "Postman", category: "tools", icon: SiPostman },
 
   // Hardware & Embedded
-  { name: "Arduino", level: 85, category: "hardware" },
-  { name: "C for Microcontrollers", level: 70, category: "hardware" },
-
-  // Networking & Systems
-  { name: "Computer Networking", level: 80, category: "networking" },
-  { name: "Linux/Bash", level: 75, category: "networking" },
-  { name: "REST APIs", level: 85, category: "networking" },
-  { name: "JSON & Postman", level: 90, category: "networking" },
+  { name: "Arduino", category: "hardware", icon: SiArduino },
+  { name: "C for Microcontrollers", category: "hardware", icon: MdOutlineDescription },
 
   // Databases
-  { name: "MongoDB", level: 90, category: "database" },
-  { name: "MySQL", level: 90, category: "database" },
-  { name: "PostgreSQL", level: 70, category: "database" },
-
-  // Sciences
-  { name: "Mathematics (MTC)", level: 95, category: "science" },
-  { name: "Physics", level: 90, category: "science" },
+  { name: "MongoDB", category: "database", icon: SiMongodb },
+  { name: "MySQL", category: "database", icon: SiMysql },
+  { name: "PostgreSQL", category: "database", icon: SiPostgresql },
 
   // Other
-  { name: "Technical Writing", level: 80, category: "other" },
-  { name: "Public Speaking", level: 75, category: "other" },
-  { name: "Research & Documentation", level: 85, category: "other" },
+  { name: "Technical Writing", category: "other", icon: MdOutlineDescription },
+  { name: "Public Speaking", category: "other", icon: MdRecordVoiceOver },
+  { name: "Research & Documentation", category: "other", icon: MdSearch },
+  { name: "Digital Arts", category: "other", icon: MdBrush },
 ];
 
 const categories = [
@@ -57,9 +49,7 @@ const categories = [
   "backend",
   "tools",
   "hardware",
-  "networking",
   "database",
-  "science",
   "other",
 ];
 
@@ -94,29 +84,25 @@ export const Skills = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill, key) => (
-            <div
-              key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
-            >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg">{skill.name}</h3>
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredSkills.map((skill) => {
+            const Icon = skill.icon;
+            return (
+              <div key={skill.name} className="bg-card p-6 rounded-lg shadow-xs card-hover">
+                <div className="text-left mb-4 flex items-center gap-3">
+                  {Icon ? (
+                    <span aria-hidden="true" className="text-2xl text-primary">
+                      <Icon />
+                    </span>
+                  ) : null}
+                  <h3 className="font-semibold text-lg">
+                    <span className="sr-only">{skill.name} logo</span>
+                    {skill.name}
+                  </h3>
+                </div>
               </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
