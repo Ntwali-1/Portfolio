@@ -12,7 +12,7 @@ const projects = [
   },
   
   {
-    id: 3,
+    id: 2,
     title: "E-learning Platform",
     description:
       "Full-featured e-learning platform with user authentication and course management.",
@@ -21,6 +21,57 @@ const projects = [
     demoUrl: "#",
     githubUrl: "https://github.com/Ntwali-1/TOTC.git",
   },
+
+  {
+    id: 3,
+    title: "La Formular",
+    description: "La Formular is a web platform for a tech company that offers a variety of big services.",
+    image:"",
+    tags: ["Next.js", "TailwindCSS", "TypeScript"],
+    demoUrl: "https://laformular.vercel.app/",
+    githubUrl: "https://github.com/Ntwali-1/LaFormula"
+  },
+
+  {
+    id: 4,
+    title: "ShelfWise",
+    description: "A backend system for store management that manages products, orders, inventory, and users with secure API endpoints and database optimization.",
+    image:"",
+    tags: ["NestJS", "PostgreSQL", "Prisma", "TypeScript"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/Ntwali-1/ShelfWise"
+  },
+
+  {
+    id: 5,
+    title: "Borrowly",
+    description:"Borrowly is a comprehensive, backend web application designed to facilitate secure peer-to-peer lending. It enables users to seamlessly request, offer, and manage loans for both money and physical items.",
+    image:"",
+    tags: ["Spring Boot", "PostgreSQL", "Docker", "Java"],
+    demoUrl: "#",
+    githubUrl:"https://github.com/Ntwali-1/Borrowly"
+  },
+
+  {
+    id: 6,
+    title: "LegitRides",
+    description: "LegitRides is a revolutionary ride-sharing platform that introduces the world’s first mutual trip exchange system alongside comprehensive dispute resolution mechanisms through appeals.",
+    image:"",
+    tags: ["NodeJs", "MongoDB", "JavaScript"],
+    demoUrl: "#",
+    githubUrl:"https://github.com/Ntwali-1/LegitRides",
+  },
+
+  {
+    id: 7,
+    title: "TerraFund",
+    description: "TerraFund is a backend web platform for bridging landowners and agricultural investors. Features include land listing management, investment proposals, real-time chat, and a verification layer. ",
+    image:"",
+    tags: ["Spring Boot", "PostgreSQL", "Java"],
+    demoUrl: "#",
+    githubUrl:"https://github.com/TerraFund/TerraFund-Backend"
+  }
+
 ];
 
 export const ProjectsSection = () => {
