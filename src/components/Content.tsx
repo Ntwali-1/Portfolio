@@ -1,27 +1,7 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
-  {
-    id: 1,
-    title: "AirVolt",
-    description: "An energy management system for smart homes",
-    image: "/image 2.png",
-    tags: ["Blender","Arduino"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/Ntwali-1/AirVolt",
-  },
   
-  {
-    id: 2,
-    title: "E-learning Platform",
-    description:
-      "Full-featured e-learning platform with user authentication and course management.",
-    image: "/image.png",
-    tags: ["Next.js", "TailwindCSS", "SQL", "TypeScript"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/Ntwali-1/TOTC.git",
-  },
-
   {
     id: 3,
     title: "La Formular",
@@ -30,6 +10,27 @@ const projects = [
     tags: ["Next.js", "TailwindCSS", "TypeScript"],
     demoUrl: "https://laformular.vercel.app/",
     githubUrl: "https://github.com/Ntwali-1/LaFormula"
+  },
+  
+  {
+    id: 2,
+    title: "Solvify",
+    description:
+      "Full-featured e-learning platform with user authentication and course management.",
+    image: "/image.png",
+    tags: ["Next.js", "TailwindCSS", "SQL", "TypeScript"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/Ntwali-1/Solvify",
+  },
+  
+  {
+    id: 5,
+    title: "Borrowly",
+    description:"Borrowly is a comprehensive, backend web application designed to facilitate secure peer-to-peer lending. It enables users to seamlessly request, offer, and manage loans for both money and physical items.",
+    image:"/borrowly.png",
+    tags: ["Spring Boot", "PostgreSQL", "Docker", "Java"],
+    demoUrl: "#",
+    githubUrl:"https://github.com/Ntwali-1/Borrowly"
   },
 
   {
@@ -43,13 +44,13 @@ const projects = [
   },
 
   {
-    id: 5,
-    title: "Borrowly",
-    description:"Borrowly is a comprehensive, backend web application designed to facilitate secure peer-to-peer lending. It enables users to seamlessly request, offer, and manage loans for both money and physical items.",
-    image:"/borrowly.png",
-    tags: ["Spring Boot", "PostgreSQL", "Docker", "Java"],
+    id: 7,
+    title: "TerraFund",
+    description: "TerraFund is a backend web platform for bridging landowners and agricultural investors. Features include land listing management, investment proposals, real-time chat, and a verification layer. ",
+    image:"/terrafund.png",
+    tags: ["Spring Boot", "PostgreSQL", "Java"],
     demoUrl: "#",
-    githubUrl:"https://github.com/Ntwali-1/Borrowly"
+    githubUrl:"https://github.com/TerraFund/TerraFund-Backend"
   },
 
   {
@@ -62,16 +63,16 @@ const projects = [
     githubUrl:"https://github.com/Ntwali-1/LegitRides",
   },
 
-  {
-    id: 7,
-    title: "TerraFund",
-    description: "TerraFund is a backend web platform for bridging landowners and agricultural investors. Features include land listing management, investment proposals, real-time chat, and a verification layer. ",
-    image:"/terrafund.png",
-    tags: ["Spring Boot", "PostgreSQL", "Java"],
-    demoUrl: "#",
-    githubUrl:"https://github.com/TerraFund/TerraFund-Backend"
-  }
 
+  {
+    id: 8,
+    title: "AirVolt",
+    description: "An energy management system for smart homes",
+    image: "/image 2.png",
+    tags: ["Blender","Arduino"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/Ntwali-1/AirVolt",
+  },
 ];
 
 export const ProjectsSection = () => {
