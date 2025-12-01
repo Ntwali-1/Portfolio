@@ -26,7 +26,7 @@ const projects = [
     id: 3,
     title: "La Formular",
     description: "La Formular is a web platform for a tech company that offers a variety of big services.",
-    image:"",
+    image: "/laformular.png",
     tags: ["Next.js", "TailwindCSS", "TypeScript"],
     demoUrl: "https://laformular.vercel.app/",
     githubUrl: "https://github.com/Ntwali-1/LaFormula"
@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     title: "ShelfWise",
     description: "A backend system for store management that manages products, orders, inventory, and users with secure API endpoints and database optimization.",
-    image:"",
+    image:"/shelfwise.png",
     tags: ["NestJS", "PostgreSQL", "Prisma", "TypeScript"],
     demoUrl: "#",
     githubUrl: "https://github.com/Ntwali-1/ShelfWise"
@@ -46,7 +46,7 @@ const projects = [
     id: 5,
     title: "Borrowly",
     description:"Borrowly is a comprehensive, backend web application designed to facilitate secure peer-to-peer lending. It enables users to seamlessly request, offer, and manage loans for both money and physical items.",
-    image:"",
+    image:"/borrowly.png",
     tags: ["Spring Boot", "PostgreSQL", "Docker", "Java"],
     demoUrl: "#",
     githubUrl:"https://github.com/Ntwali-1/Borrowly"
@@ -56,7 +56,7 @@ const projects = [
     id: 6,
     title: "LegitRides",
     description: "LegitRides is a revolutionary ride-sharing platform that introduces the world’s first mutual trip exchange system alongside comprehensive dispute resolution mechanisms through appeals.",
-    image:"",
+    image:"/legitrides.png",
     tags: ["NodeJs", "MongoDB", "JavaScript"],
     demoUrl: "#",
     githubUrl:"https://github.com/Ntwali-1/LegitRides",
@@ -66,7 +66,7 @@ const projects = [
     id: 7,
     title: "TerraFund",
     description: "TerraFund is a backend web platform for bridging landowners and agricultural investors. Features include land listing management, investment proposals, real-time chat, and a verification layer. ",
-    image:"",
+    image:"/terrafund.png",
     tags: ["Spring Boot", "PostgreSQL", "Java"],
     demoUrl: "#",
     githubUrl:"https://github.com/TerraFund/TerraFund-Backend"
