@@ -68,24 +68,25 @@
 
 @layer base {
   :root{ 
-    --background: 210 40% 98%;
-    --foreground: 213 47% 11%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
     
     --card: 0 0% 100%;
+    --border: 214 32% 91%;
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
   }
   .dark {
-    --background: 222 47% 4%;
+    --background: 0 0% 0%;
     --foreground: 213 31% 91%;
 
-    --card: 222 47% 8%;
+    --card: 0 0% 7%;
 
-    --primary: 250 65% 65%;
+    --primary: 262 83% 68%;
     --primary-foreground: 213 31% 91%;
 
-    --border: 217 33% 20%;
+    --border: 217 33% 15%;
   }
 
   * {
@@ -134,7 +135,7 @@
 }
 
 @utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+  @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1;
 }
 
 @utility gradient-border {
@@ -145,9 +146,17 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+  @apply px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium
+         transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.6)]
          hover:scale-105 active:scale-95;
+}
+
+@utility section-padding {
+  @apply py-24 px-4 md:px-8 lg:px-16;
+}
+
+@utility card-gradient {
+  @apply bg-gradient-to-br from-card to-indigo-50 dark:from-card dark:to-indigo-900/10;
 }
 
 @utility star {
