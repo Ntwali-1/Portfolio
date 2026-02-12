@@ -105,17 +105,17 @@ const HeroSection = () => {
                 <ArrowDown className="inline-block ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
               </a>
               <a 
-                href="/cv.pdf" 
+                href="/Ntwali Yanis-CV.pdf" 
                 target="_blank"
-                download
+                download="Ntwali_Yanis_CV.pdf"
                 className="px-6 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 font-medium"
               >
                 Download CV
               </a>
               <a 
-                href="/resume.pdf" 
+                href="/Ntwali Yanis-Resume.pdf" 
                 target="_blank"
-                download
+                download="Ntwali_Yanis_Resume.pdf"
                 className="px-6 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 font-medium"
               >
                 Resume
