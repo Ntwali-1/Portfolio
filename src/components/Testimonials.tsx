@@ -35,7 +35,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Ntwali Vieiera",
+    name: "Ntwali Isimbi Vieira",
     role: "Senior Backend Developer",
     company: "RCA",
     image: "https://ui-avatars.com/api/?name=John+Doe&background=8b5cf6&color=fff&size=128",
