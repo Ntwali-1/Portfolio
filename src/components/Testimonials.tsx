@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     name: "Ntwali Isimbi Vieira",
     role: "Senior Backend Developer",
     company: "RCA",
-    image: "https://ui-avatars.com/api/?name=John+Doe&background=8b5cf6&color=fff&size=128",
+    image: "https://ui-avatars.com/api/?name=Ntwali+Vieira&background=8b5cf6&color=fff&size=128",
     text: "Working with Yanis was an absolute pleasure. His technical skills and problem-solving abilities are exceptional. He delivered high-quality code and was always willing to go the extra mile."
   },
   {
@@ -46,7 +46,7 @@ const testimonials: Testimonial[] = [
     name: "NIYOBYOSE Isaac Precieux",
     role: "CEO",
     company: "Tech4Impact",
-    image: "https://ui-avatars.com/api/?name=Jane+Smith&background=8b5cf6&color=fff&size=128",
+    image: "https://ui-avatars.com/api/?name=Isaac+Precieux&background=8b5cf6&color=fff&size=128",
     text: "Yanis is a talented developer who brings creativity and technical expertise to every project. His attention to detail and commitment to excellence make him a valuable team member."
   },
   {
@@ -54,7 +54,7 @@ const testimonials: Testimonial[] = [
     name: "KANEZA Amandine",
     role: "Co-Founder",
     company: "BlinkTechnologiz",
-    image: "https://ui-avatars.com/api/?name=Mike+Johnson&background=8b5cf6&color=fff&size=128",
+    image: "https://ui-avatars.com/api/?name=Kaneza+Amandine&background=8b5cf6&color=fff&size=128",
     text: "I highly recommend Yanis for any development project. He has a deep understanding of both frontend and backend technologies, and his work ethic is outstanding."
   }
 ];
