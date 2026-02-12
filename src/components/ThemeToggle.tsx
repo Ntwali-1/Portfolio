@@ -10,14 +10,19 @@ const ThemeToggle = () => {
   useEffect(() => {
     setMounted(true);
     const storedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     
-    if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+    // Default to light theme unless user explicitly chose dark mode
+    if (storedTheme === "dark") {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     } else {
+      // Always default to light theme
       setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
+      // Set light as default in localStorage if not set
+      if (!storedTheme) {
+        localStorage.setItem("theme", "light");
+      }
     }
   }, []);
   
