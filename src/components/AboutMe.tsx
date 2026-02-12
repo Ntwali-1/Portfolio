@@ -1,4 +1,4 @@
-import { Code, User, ShieldCheck, Cpu } from "lucide-react"
+import { Code, ShieldCheck, Cpu } from "lucide-react"
 import { motion } from "framer-motion"
 
 const containerVariants = {
