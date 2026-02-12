@@ -35,25 +35,25 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "John Doe",
-    role: "Senior Developer",
-    company: "Tech Corp",
+    name: "Ntwali Vieiera",
+    role: "Senior Backend Developer",
+    company: "RCA",
     image: "https://ui-avatars.com/api/?name=John+Doe&background=8b5cf6&color=fff&size=128",
     text: "Working with Yanis was an absolute pleasure. His technical skills and problem-solving abilities are exceptional. He delivered high-quality code and was always willing to go the extra mile."
   },
   {
     id: 2,
-    name: "Jane Smith",
-    role: "Project Manager",
-    company: "Digital Solutions",
+    name: "NIYOBYOSE Isaac Precieux",
+    role: "CEO",
+    company: "Tech4Impact",
     image: "https://ui-avatars.com/api/?name=Jane+Smith&background=8b5cf6&color=fff&size=128",
     text: "Yanis is a talented developer who brings creativity and technical expertise to every project. His attention to detail and commitment to excellence make him a valuable team member."
   },
   {
     id: 3,
-    name: "Mike Johnson",
-    role: "CTO",
-    company: "StartupHub",
+    name: "KANEZA Amandine",
+    role: "Co-Founder",
+    company: "BlinkTechnologiz",
     image: "https://ui-avatars.com/api/?name=Mike+Johnson&background=8b5cf6&color=fff&size=128",
     text: "I highly recommend Yanis for any development project. He has a deep understanding of both frontend and backend technologies, and his work ethic is outstanding."
   }

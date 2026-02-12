@@ -125,23 +125,6 @@ const AboutMe = () => {
                 </div>
               </div>
             </motion.div>
-            <motion.div 
-              className="gradient-border p-6 card-hover bg-card rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-l-primary"
-              variants={itemVariants}
-              whileHover={{ scale: 1.03, x: 5 }}
-            >
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary"/>
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-I aim to create intuitive and accessible interfaces by combining thoughtful design with user feedback, ensuring both form and function align.
-</p>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </motion.div>
