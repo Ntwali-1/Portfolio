@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const projects = [
-  
+
   {
     id: 3,
     title: "La Formular",
@@ -15,7 +15,7 @@ const projects = [
     githubUrl: "https://github.com/Ntwali-1/LaFormula",
     category: "Web"
   },
-  
+
   {
     id: 2,
     title: "Solvify",
@@ -28,16 +28,16 @@ const projects = [
     githubUrl: "https://github.com/Ntwali-1/Solvify",
     category: "Web"
   },
-  
+
   {
     id: 5,
     title: "Borrowly",
-    description:"Borrowly is a comprehensive, backend web application designed to facilitate secure peer-to-peer lending. It enables users to seamlessly request, offer, and manage loans for both money and physical items.",
-    image:"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop",
+    description: "Borrowly is a comprehensive, backend web application designed to facilitate secure peer-to-peer lending. It enables users to seamlessly request, offer, and manage loans for both money and physical items.",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop",
     images: ["https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop"],
     tags: ["Spring Boot", "PostgreSQL", "Docker", "Java"],
     demoUrl: "#",
-    githubUrl:"https://github.com/Ntwali-1/Borrowly",
+    githubUrl: "https://github.com/Ntwali-1/Borrowly",
     category: "Backend"
   },
 
@@ -45,7 +45,7 @@ const projects = [
     id: 4,
     title: "ShelfWise",
     description: "A backend system for store management that manages products, orders, inventory, and users with secure API endpoints and database optimization.",
-    image:"https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop",
     images: ["https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop"],
     tags: ["NestJS", "PostgreSQL", "Prisma", "TypeScript"],
     demoUrl: "#",
@@ -57,7 +57,7 @@ const projects = [
     id: 7,
     title: "TerraFund",
     description: "TerraFund is a backend web platform for bridging landowners and agricultural investors. Features include land listing management, investment proposals, real-time chat, and a verification layer. ",
-    image:"https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=600&fit=crop",
@@ -65,7 +65,7 @@ const projects = [
     ],
     tags: ["Spring Boot", "PostgreSQL", "Java"],
     demoUrl: "#",
-    githubUrl:"https://github.com/ntwali-1/microservices-springboot",
+    githubUrl: "https://github.com/ntwali-1/microservices-springboot",
     category: "Backend"
   },
 
@@ -73,11 +73,11 @@ const projects = [
     id: 6,
     title: "LegitRides",
     description: "LegitRides is a revolutionary ride-sharing platform that introduces the world's first mutual trip exchange system alongside comprehensive dispute resolution mechanisms through appeals.",
-    image:"https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop",
     images: ["https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop"],
     tags: ["NodeJs", "MongoDB", "JavaScript"],
     demoUrl: "#",
-    githubUrl:"https://github.com/Ntwali-1/LegitRides",
+    githubUrl: "https://github.com/Ntwali-1/LegitRides",
     category: "Backend"
   },
 
@@ -96,7 +96,7 @@ const projects = [
     githubUrl: "https://github.com/ntwali-1/terrafund-mobile-v2",
     category: "Mobile"
   },
-    
+
   {
     id: 9,
     title: "WasteNet",
@@ -105,7 +105,31 @@ const projects = [
     images: ["/wastenet1.png", "/wastenet2.png"],
     tags: ["React", "Node.js", "MongoDB", "Maps API"],
     demoUrl: "#",
-    githubUrl: "https://github.com/Ntwali-1/WasteNet",
+    githubUrl: "https://github.com/Waste-hunters",
+    category: "Full Stack"
+  },
+  
+  {
+    id: 11,
+    title: "IPA Internship Management System",
+    description: "A full-stack web application built with Next.js, Prisma, and PostgreSQL to manage internship programs. It allows students, supervisors, and teachers to track tasks, ratings, messages, and profile completion. Features include secure authentication, task management, messaging, and automated profile completion emails.",
+    image: "/iap-landing.png",
+    images: ["/iap-landing.png", "/iap-login.png"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "TypeScript"],
+    demoUrl: "https://iap-system.vercel.app/",
+    githubUrl: "#",
+    category: "Full Stack"
+  },
+  
+  {
+    id: 11,
+    title: "IPA Internship Management System",
+    description: "A full-stack web application built with Next.js, Prisma, and PostgreSQL to manage internship programs. It allows students, supervisors, and teachers to track tasks, ratings, messages, and profile completion. Features include secure authentication, task management, messaging, and automated profile completion emails.",
+    image: "/iap-landing.png",
+    images: ["/iap-landing.png", "/iap-login.png"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "TypeScript"],
+    demoUrl: "https://iap-system.vercel.app/",
+    githubUrl: "#",
     category: "Full Stack"
   },
 ];
@@ -149,21 +173,21 @@ export const ProjectsSection = () => {
 
   return (
     <section id="projects" className="py-24 px-4 relative bg-gradient-to-b from-indigo-50/30 to-background dark:from-indigo-900/10 dark:to-background">
-      <motion.div 
+      <motion.div
         className="container mx-auto max-w-5xl"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.h2 
+        <motion.h2
           className="text-3xl md:text-4xl font-bold mb-4 text-center"
           variants={itemVariants}
         >
           Featured <span className="text-primary"> Projects </span>
         </motion.h2>
 
-        <motion.p 
+        <motion.p
           className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto"
           variants={itemVariants}
         >
@@ -172,7 +196,7 @@ export const ProjectsSection = () => {
         </motion.p>
 
         {/* Category Navigation */}
-        <motion.div 
+        <motion.div
           className="flex justify-center mb-12"
           variants={itemVariants}
         >
@@ -181,11 +205,10 @@ export const ProjectsSection = () => {
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-4 md:px-6 py-2 rounded-md transition-all duration-300 text-sm md:text-base font-medium ${
-                  activeCategory === category.id
+                className={`px-4 md:px-6 py-2 rounded-md transition-all duration-300 text-sm md:text-base font-medium ${activeCategory === category.id
                     ? "bg-primary text-white shadow-lg"
                     : "text-foreground hover:bg-primary/10"
-                }`}
+                  }`}
               >
                 {category.label}
               </button>
@@ -199,7 +222,7 @@ export const ProjectsSection = () => {
           ))}
         </div>
 
-        <motion.div 
+        <motion.div
           className="text-center mt-12"
           variants={itemVariants}
         >
@@ -208,7 +231,7 @@ export const ProjectsSection = () => {
             target="_blank"
             href="https://github.com/Ntwali-1"
           >
-            View More on GitHub 
+            View More on GitHub
             <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
@@ -249,9 +272,8 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
                 key={idx}
                 src={img}
                 alt={`${project.title} ${idx + 1}`}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
-                  idx === currentImageIndex ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${idx === currentImageIndex ? "opacity-100" : "opacity-0"
+                  }`}
               />
             ))}
           </div>
@@ -285,7 +307,7 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
       </div>
 
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300"> 
+        <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
           {project.title}
         </h3>
         <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
@@ -293,7 +315,7 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
         </p>
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag: string, idx: number) => (
-            <span 
+            <span
               key={idx}
               className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
             >
