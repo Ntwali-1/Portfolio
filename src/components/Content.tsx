@@ -108,28 +108,16 @@ const projects = [
     githubUrl: "https://github.com/Waste-hunters",
     category: "Full Stack"
   },
-  
+
   {
     id: 11,
     title: "IPA Internship Management System",
     description: "A full-stack web application built with Next.js, Prisma, and PostgreSQL to manage internship programs. It allows students, supervisors, and teachers to track tasks, ratings, messages, and profile completion. Features include secure authentication, task management, messaging, and automated profile completion emails.",
     image: "/iap-landing.png",
     images: ["/iap-landing.png", "/iap-login.png"],
-    tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "TypeScript"],
+    tags: ["Next.js", "NestJS", "Prisma", "PostgreSQL", "TailwindCSS", "TypeScript"],
     demoUrl: "https://iap-system.vercel.app/",
-    githubUrl: "#",
-    category: "Full Stack"
-  },
-  
-  {
-    id: 11,
-    title: "IPA Internship Management System",
-    description: "A full-stack web application built with Next.js, Prisma, and PostgreSQL to manage internship programs. It allows students, supervisors, and teachers to track tasks, ratings, messages, and profile completion. Features include secure authentication, task management, messaging, and automated profile completion emails.",
-    image: "/iap-landing.png",
-    images: ["/iap-landing.png", "/iap-login.png"],
-    tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "TypeScript"],
-    demoUrl: "https://iap-system.vercel.app/",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Internship-Management-System/IAP",
     category: "Full Stack"
   },
 ];
@@ -206,8 +194,8 @@ export const ProjectsSection = () => {
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-4 md:px-6 py-2 rounded-md transition-all duration-300 text-sm md:text-base font-medium ${activeCategory === category.id
-                    ? "bg-primary text-white shadow-lg"
-                    : "text-foreground hover:bg-primary/10"
+                  ? "bg-primary text-white shadow-lg"
+                  : "text-foreground hover:bg-primary/10"
                   }`}
               >
                 {category.label}
