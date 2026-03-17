@@ -111,7 +111,7 @@ const projects = [
 
   {
     id: 11,
-    title: "IPA Internship Management System",
+    title: "IAP Management System",
     description: "A full-stack web application built with Next.js, Prisma, and PostgreSQL to manage internship programs. It allows students, supervisors, and teachers to track tasks, ratings, messages, and profile completion. Features include secure authentication, task management, messaging, and automated profile completion emails.",
     image: "/iap-landing.png",
     images: ["/iap-landing.png", "/iap-login.png"],
