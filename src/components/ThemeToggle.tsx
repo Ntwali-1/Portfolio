@@ -4,24 +4,24 @@ import { cn } from "../lib/utils";
 import { motion } from "framer-motion";
 
 const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
     setMounted(true);
     const storedTheme = localStorage.getItem("theme");
     
-    // Default to light theme unless user explicitly chose dark mode
-    if (storedTheme === "dark") {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else {
-      // Always default to light theme
+    // Default to dark theme unless user explicitly chose light mode
+    if (storedTheme === "light") {
       setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
-      // Set light as default in localStorage if not set
+    } else {
+      // Always default to dark theme
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+      // Set dark as default in localStorage if not set
       if (!storedTheme) {
-        localStorage.setItem("theme", "light");
+        localStorage.setItem("theme", "dark");
       }
     }
   }, []);
